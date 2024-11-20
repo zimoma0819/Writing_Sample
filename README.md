@@ -11,3 +11,5 @@ The data used in this project is a synthetic dataset made by the TikTok team for
 
 ## Modelling and evaluation
 A random forest comprising 75 trees was used as the champion model to predict whether a video contained a claim or offered an opinion. The barplot below shows that in agreement with the prior EDA conducted, user engagement-related features such as views, likes, shares, downloads and comments were among the most important features in determining whether a video contains a claim.
+
+![image](https://github.com/user-attachments/assets/2ba0f79d-151a-4c86-b8af-8bc002866439)
