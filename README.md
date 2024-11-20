@@ -13,3 +13,10 @@ The data used in this project is a synthetic dataset made by the TikTok team for
 A random forest comprising 75 trees was used as the champion model to predict whether a video contained a claim or offered an opinion. The barplot below shows that in agreement with the prior EDA conducted, user engagement-related features such as views, likes, shares, downloads and comments were among the most important features in determining whether a video contains a claim.
 
 ![image](https://github.com/user-attachments/assets/2ba0f79d-151a-4c86-b8af-8bc002866439)
+
+Additionally, the confusion matrix below shows that out of the 3817 rows in the test holdout data, there were only 3 false positives and 16 false negatives.
+
+![image](https://github.com/user-attachments/assets/50fdf759-c0b4-4900-8cc2-95a9ba83e0a9)
+
+## Conclusion
+The model constructed was able to successfully classify videos by their claim status and the most predictive features were all related to the user engagement levels associated with each video. Initial data inspection and exploratory data analysis also identified close correlations between these engagement features and the claim status of videos. Statistical testing and regression modeling were also performed to derive further insights from the data and are explained in greater detail in the various notebooks listed in this repository. Lastly, the 'video_transcription_text' feature was dropped before the construction of the models as it was text-based and not a categorical feature that could be encoded easily. However, we could explore the use of natural language processing such as the CountVectorizer algorithm to transform it into a usable feature that may enhance the performance of the models.
